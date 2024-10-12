@@ -1,0 +1,55 @@
+
+
+.card-History {
+    padding: 15px 15px !important;
+    background-color: white;
+    height: 90px;
+    width: 100% ;
+    margin-bottom: 25px;
+    text-align: start;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.card-detailes{
+    line-height: 1.1;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+}
+.card-detailes .title1  {
+    color: rgb(177, 177, 177) !important;
+    font-size: 12px;
+}
+.card-detailes .subtitle1 {
+    color: rgb(122, 120, 120) !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.subtitle1green {
+    color: green !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto !important;
+   
+    display: flex !important;
+    margin-top: 5px !important;
+}
+
+.card p{
+    text-align: center;
+    font-size: 14px ;
+    font-weight: bold;
+}
+
+
+
+

@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0;
+}
+
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+.nav-item a {
+    color: rgba(238, 229, 229, 0.247);
+    font-size: 17px;
+}
+
+.nav-iconsForm i {
+    cursor: pointer;
+}
+
+.IconActive{
+   color: white;
+   font-weight: bold;
+   font-size: 17.5px !important;
+}
+
+
+/* RESPONSIVE */
+@media(max-width:992px){
+    .nav-iconsForm{
+        padding: .5rem 0;
+        width: 100%;
+        justify-content: end;
+        
+
+    }
+    .nav-item a {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-item a:focus {
+        font-size: 15.5px;
+    }
+    
+}

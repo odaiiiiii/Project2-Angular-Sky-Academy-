@@ -1,0 +1,41 @@
+
+
+
+    <div>
+        
+        <!--Title page-->
+        <div class="container row  justify-content-between py-1 home-div1 ">
+            <h4 class="col-8 title-home">Welcome Back {{name}} Here are your latest updates.</h4>
+            <div class="col-lg-2 col-4 col-md-3">
+                <button class=" w-100  btn btn-danger newReq-home">New Request</button>
+
+            </div>
+        </div>
+
+        
+        <!-- SECTION  ONE PROFILE & GREEN BOX -->
+        <div class="container home-div2 my-5 row m-auto">
+            <app-employee-details-home class="col-12 col-lg-7 box-view-profile shadow-boxes"></app-employee-details-home>
+          
+            <div class="col-lg-5 col-12 box-two d-flex flex-wrap ">
+              <app-green-box class="col-lg-5"></app-green-box>
+              <app-green-box class="col-lg-5"></app-green-box>
+              
+            </div>
+          </div>
+          
+           <div class="container">
+            <p class="fw-bold">Latest News:</p>
+
+            <app-slider-home></app-slider-home>
+           </div>
+
+
+
+
+
+
+            <!-- Vacation Requests -->
+            <app-vacation-card  [limit]="3" ></app-vacation-card>
+
+    </div>

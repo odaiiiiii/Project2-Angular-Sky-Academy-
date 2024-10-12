@@ -1,0 +1,35 @@
+
+
+.show-mobile{
+display: none;
+}
+
+/*  Responsive */
+
+@media(max-width:992px){
+
+
+    .show-mobile{
+        display: flex;
+        }
+        
+        .show-computer{
+        display: none;
+        }
+}
+
+@media(max-width:767px){
+    .allcards{
+       justify-content: space-between !important;
+       
+    }
+
+.buttons{
+    margin-top: 15px !important;
+}
+
+}
+
+
+      
+

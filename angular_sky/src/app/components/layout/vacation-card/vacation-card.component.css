@@ -1,0 +1,110 @@
+
+.card {
+    background-color: white;
+    padding: 10px 0;
+    min-height: 280px !important;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto !important;
+    display: flex !important;
+    margin-top: 5px !important;
+}
+
+.card p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-detailes {
+    line-height: 1.1;
+    padding: 0px 10px;
+    margin-bottom: 7px;
+}
+
+.card-detailes .title1 {
+    color: rgb(177, 177, 177) !important;
+    font-size: 12px;
+}
+
+.card-detailes .subtitle1 {
+    color: rgb(122, 120, 120) !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.home-div4{
+    background-color: rgba(225, 247, 247, 0.699); 
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 10px 23px !important;
+    
+}
+
+
+
+.buttons {
+    margin: auto !important;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px !important;
+}
+
+.buttons button {
+    font-size: 12px; 
+    padding: 2px !important;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.buttons .btn-outline-success:hover {
+    color: white !important;
+    background: red;
+    transition: 1.2s;
+}
+
+.buttons .btn-success:hover {
+    color: green !important;
+    background: white;
+    transition: 1.2s;
+}
+
+#cards-container{
+    gap: 2rem !important;
+}
+
+
+@media(max-width:992px){
+
+    .buttons{
+      gap: 5px;
+      margin-top: 10px !important;
+      width: 95%;
+    }
+
+    
+.ViewMore{
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px !important;
+    
+}
+
+}
+
+@media(max-width:767px){
+    
+.card {
+
+    margin: auto !important;
+}
+}

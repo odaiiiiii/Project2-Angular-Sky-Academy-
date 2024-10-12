@@ -1,0 +1,87 @@
+<div class="container VacationPage">
+    <div class="row container justify-content-between">
+      <span class="d-flex col-lg-3 VacationRequests-sec">
+        <i class="fa-solid fa-list-check"></i>
+        <p>Vacation Requests</p>
+      </span>
+      <div class="search-container my-2 my-lg-0 col-lg-3">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input 
+          class="form-control" 
+          id="searchInput" 
+          type="search" 
+          placeholder="Search..." 
+          aria-label="Search"
+          [(ngModel)]="searchTerm">
+      </div>
+    </div>
+    <div class="hr-bold"></div>
+    <div class="d-flex justify-content-between">
+      <div class="form-check mb-3">
+        <input 
+          class="form-check-input" 
+          type="checkbox" 
+          [(ngModel)]="selectAll" 
+          (change)="toggleSelectAll()"
+          id="select-all">
+        <label class="form-check-label" for="select-all">Select All</label>
+      </div>
+      <i class="fa fa-filter custom-filter-icon" style="font-size:24px"></i>
+    </div>
+  
+    <!-- Display Cards -->
+    <div class="row allcards m-0 computer">
+      <ng-container *ngFor="let info of getFilteredInfos()">
+        <div class="card-VacationPage-computer cardSearch col-4 shadow-boxes">
+          <div class="div1-card-VacationPage-computer">
+            <input 
+              class="form-check-input checkBox-card" 
+              type="checkbox" 
+              [(ngModel)]="info.checked">
+            <img src="{{info.image}}">
+            <span></span>
+          </div>
+          <div class="card-detailes-computer col-lg-12">
+            <span class="title1">Submitted on:</span> <br>
+            <span class="subtitle1">{{info.name}}</span>
+          </div>
+          <div class="card-detailes-computer col-lg-6">
+            <span class="title1">Duration:</span> <br>
+            <span class="subtitle1">{{info.duration}}</span>
+          </div>
+          <div class="card-detailes-computer">
+            <span class="title1">Salary:</span> <br>
+            <span class="subtitle1">{{info.salary}}</span>
+          </div>
+          <div class="buttons-computer col-lg-3">
+            <button type="button" class="btn btn-success text-white col-lg-12">Approve</button>
+            <button type="button" class="btn btn-outline-danger text-danger col-lg-12">Decline</button>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  
+    <!-- Pagination Controls -->
+    <div class="row container m-auto p-0 my-5">
+      <div class="pagination-container col-lg-2 col-md-3 col-sm-4 col-5 my-4">
+        <button 
+          id="prevPage" 
+          class="btn btn-outline-primary noneBorder" 
+          [disabled]="isPrevDisabled()" 
+          (click)="prevPage()">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <span id="pageNumbers" class="mx-2">
+          Page {{currentPage}} of {{totalPages}}
+        </span>
+        <button 
+          id="nextPage" 
+          class="btn btn-outline-primary noneBorder" 
+          [disabled]="isNextDisabled()" 
+          (click)="nextPage()">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,60 @@
+
+
+
+
+
+
+<div class="container home-div4  shadow-boxes  ">
+  <div class="row justify-content-between">
+     <span class="d-flex col-lg-3  VacationRequests-sec">
+      <i class="fa-solid fa-list-check"></i>
+      <p>Vacation Requests</p>
+     </span>
+  
+      
+      <div class="search-container my-2 my-lg-0 col-lg-3">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input  class="form-control" id="searchInput" type="search" placeholder="Search..." aria-label="Search"
+          [(ngModel)]="searchTerm"
+          > 
+      </div>
+      
+  </div>
+  <hr>
+
+<!--cards  -->
+
+<div class="allcards row " id="cards-container">
+  <ng-container *ngFor="let info of getFilteredInfos()">
+    <div class="card  col-lg-3 col-md-4 col-sm-6 col-10 shadow-boxes cardSearch">
+      <div>
+        <img [src]="info.image" alt="Card Image">
+        <p>{{ info.name }}</p>
+      </div>
+      <div class="card-detailes">
+        <span class="title1">Submitted on:</span><br>
+        <span class="subtitle1">{{ info.submittedOn }}</span>
+      </div>
+      <div class="card-detailes">
+        <span class="title1">Duration:</span><br>
+        <span class="subtitle1">{{ info.duration }}</span>
+      </div>
+      <div class="card-detailes">
+        <span class="title1">Salary:</span><br>
+        <span class="subtitle1">{{ info.salary }}</span>
+      </div>
+      <div class="row buttons">
+        <button type="button" class="btn btn-outline-success text-success col-lg-5">Decline</button>
+        <button type="button" class="btn btn-success text-white col-lg-5">Approve</button>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+ 
+
+
+
+      <p class="text-end text-danger ViewMore "><a class="text-danger" style="text-decoration: none; " routerLink="/Vacation">View More</a> <i class="fa-solid fa-arrow-right-long " ></i></p>
+
+</div>

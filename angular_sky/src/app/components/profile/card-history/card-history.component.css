@@ -1,0 +1,39 @@
+
+
+
+.card-History {
+    padding: 15px 15px !important;
+    background-color: white;
+    height: 90px;
+    width: 100% ;
+    margin-bottom: 25px;
+    text-align: start;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.card-History-title,
+.card-History-date,
+.card-History-Approved {
+    font-size: 11px;
+}
+
+.card-History-title {
+    color: black;
+    font-weight: bold;
+}
+
+.card-History-date {
+    color: rgb(170, 162, 162);
+}
+
+.card-History-span {
+    line-height: 1;
+    padding-bottom: 2px;
+}
+
+.card-History-Approved {
+    color: rgb(134, 123, 123);
+    font-weight: 400;
+}
+
